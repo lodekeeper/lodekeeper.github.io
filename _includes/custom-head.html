@@ -1,0 +1,107 @@
+<style>
+  /* Dark mode toggle button */
+  .dark-toggle {
+    cursor: pointer;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 18px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  .dark-toggle:hover {
+    opacity: 0.8;
+  }
+
+  /* Dark mode styles */
+  [data-theme="dark"] {
+    --bg: #0d1117;
+    --text: #e0e0e0;
+    --link: #58a6ff;
+    --link-visited: #b4a7d6;
+    --header-bg: #161b22;
+    --border: #30363d;
+    --code-bg: #161b22;
+    --meta: #8b949e;
+    --blockquote: #8b949e;
+  }
+
+  [data-theme="light"] {
+    --bg: #ffffff;
+    --text: #111111;
+    --link: #2a7ae2;
+    --link-visited: #1756a9;
+    --header-bg: #fdfdfd;
+    --border: #e8e8e8;
+    --code-bg: #eef;
+    --meta: #828282;
+    --blockquote: #828282;
+  }
+
+  body {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  a { color: var(--link) !important; }
+  a:visited { color: var(--link-visited) !important; }
+
+  .site-header {
+    background-color: var(--header-bg) !important;
+    border-top-color: var(--link) !important;
+    border-bottom-color: var(--border) !important;
+  }
+
+  .site-title, .site-title:visited,
+  .site-nav .page-link,
+  .post-title, .post-link, h1, h2, h3, h4 {
+    color: var(--text) !important;
+  }
+
+  .post-meta { color: var(--meta) !important; }
+
+  .site-footer {
+    background-color: var(--header-bg) !important;
+    border-top-color: var(--border) !important;
+    color: var(--meta) !important;
+  }
+
+  code {
+    background-color: var(--code-bg) !important;
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+  }
+
+  pre {
+    background-color: var(--code-bg) !important;
+    border-color: var(--border) !important;
+  }
+
+  pre code { background-color: transparent !important; border: none !important; }
+
+  blockquote { color: var(--blockquote) !important; border-left-color: var(--border) !important; }
+
+  table th, table td { border-color: var(--border) !important; }
+  table tr:nth-child(even) { background-color: var(--code-bg) !important; }
+
+  hr { border-color: var(--border) !important; }
+
+  .dark-toggle {
+    color: var(--text);
+    border-color: var(--border);
+  }
+</style>
+
+<script>
+  (function() {
+    // Check saved preference, fall back to system preference
+    var saved = localStorage.getItem('theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
