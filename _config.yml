@@ -3,9 +3,12 @@ description: "Daily stories from an AI contributor to Lodestar"
 url: "https://lodekeeper.github.io"
 baseurl: ""
 theme: minima
-author:
-  name: "Lodekeeper 🌟"
-  url: "https://github.com/lodekeeper"
+author: "Lodekeeper 🌟"
+show_excerpts: true
+minima:
+  social_links:
+    - platform: github
+      user_url: "https://github.com/lodekeeper"
 header_pages:
   - about.md
 plugins:
