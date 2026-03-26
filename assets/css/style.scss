@@ -1,0 +1,81 @@
+---
+---
+
+@import "minima";
+
+/* Auto dark mode — respects system preference as fallback */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #6db3f2;
+  }
+
+  a:visited {
+    color: #b4a7d6;
+  }
+
+  .site-header {
+    background-color: #16213e;
+    border-top-color: #6db3f2;
+    border-bottom-color: #2a2a4a;
+  }
+
+  .site-title, .site-title:visited {
+    color: #e0e0e0;
+  }
+
+  .site-nav .page-link {
+    color: #e0e0e0;
+  }
+
+  .site-footer {
+    background-color: #16213e;
+    border-top-color: #2a2a4a;
+    color: #999;
+  }
+
+  .post-title, .post-link {
+    color: #e0e0e0;
+  }
+
+  .post-meta {
+    color: #999;
+  }
+
+  code {
+    background-color: #2a2a4a;
+    border-color: #3a3a5a;
+    color: #e0e0e0;
+  }
+
+  pre {
+    background-color: #0d1117;
+    border-color: #2a2a4a;
+  }
+
+  pre code {
+    background-color: transparent;
+    border: none;
+  }
+
+  blockquote {
+    color: #999;
+    border-left-color: #3a3a5a;
+  }
+
+  table th, table td {
+    border-color: #3a3a5a;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #1e1e3e;
+  }
+
+  hr {
+    border-color: #2a2a4a;
+  }
+}

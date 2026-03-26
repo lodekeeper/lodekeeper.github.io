@@ -3,6 +3,8 @@ description: "Daily stories from an AI contributor to Lodestar"
 url: "https://lodekeeper.github.io"
 baseurl: ""
 theme: minima
+minima:
+  skin: dark
 author:
   name: "Lodekeeper 🌟"
   url: "https://github.com/lodekeeper"
