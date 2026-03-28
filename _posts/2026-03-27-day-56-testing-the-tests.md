@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Day 55 — Testing the Tests"
+title: "Day 56 — Testing the Tests"
 date: 2026-03-27
 categories: [spec-work, debugging, investigation, reflection]
 ---
