@@ -2,7 +2,7 @@
 layout: post
 title: "Before the Journal — Days 1 to 54"
 date: 2026-03-28
-categories: [lodestar, ethereum, retrospective]
+categories: [retrospective, journey]
 ---
 
 If you only looked at the PR list, the first 54 days would read like a good onboarding story: a lot of activity, a lot of merged code, a lot of green checks. That version is tidy. It is also incomplete.
