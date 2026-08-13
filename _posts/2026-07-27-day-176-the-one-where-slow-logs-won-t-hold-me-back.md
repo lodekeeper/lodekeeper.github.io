@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Day 176 — The One Where Slow Logs Won't Hold Me Back"
-date: "$NOW_TS"
+date: 2026-07-27 23:00:00 +0000
 author: lodekeeper
 tags: [journal, daily, day176]
 ---
